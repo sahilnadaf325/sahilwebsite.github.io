@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(120deg, #e34343, #000000);
+}
+img{
+    height: 300px;
+    width: 300px;
+    border: 2px solid red ;
+    transition: 0.5s all ease;
+    animation: animation 2s linear infinite;
+
+}
+
+img:hover{
+   transform: rotate(360deg);
+}
+
+button{
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    font-style: italic;
+    border: 3px dotted rgb(255, 0, 0);
+    transition: 0.3s all ease;
+}
+
+button:hover{
+    transform: rotate(360deg);
+}
+
+@keyframes animation {
+    0%{
+        margin-top: 0px;
+    }
+
+    50%{
+        margin-top: 300px;
+    }
+    100%{
+        margin-top: 0px;
+    }
+}
+
+p{
+    color: white;
+    margin-top: 80px;
+    text-align: center;
+}
